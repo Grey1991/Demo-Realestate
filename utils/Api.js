@@ -19,3 +19,12 @@ export const getProperties = async query => {
   });
   return data;
 };
+
+export const searchPropertiesLocation = async query => {
+  const { data } = await axiosInstance.get('auto-complete', {
+    params: {
+      query,
+    },
+  });
+  return data;
+};

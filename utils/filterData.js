@@ -27,8 +27,8 @@ export const filterData = [
       { name: '60,000', value: '60000' },
       { name: '85,000', value: '85000' },
     ],
-    placeholder: 'Min Price(AED)',
-    queryName: 'minPrice',
+    placeholder: 'Min Price(AUD)',
+    queryName: 'priceMin',
   },
   {
     items: [
@@ -49,8 +49,8 @@ export const filterData = [
       { name: '900,000', value: '900000' },
       { name: '1000,000', value: '1000000' },
     ],
-    placeholder: 'Max Price(AED)',
-    queryName: 'maxPrice',
+    placeholder: 'Max Price(AUD)',
+    queryName: 'priceMax',
   },
   {
     items: [
@@ -139,8 +139,8 @@ export const getFilterValues = filterValues => {
     purpose,
     rentFrequency,
     categoryExternalID,
-    minPrice,
-    maxPrice,
+    priceMin,
+    priceMax,
     areaMax,
     roomsMin,
     bathsMin,
@@ -158,12 +158,12 @@ export const getFilterValues = filterValues => {
       value: rentFrequency,
     },
     {
-      name: 'minPrice',
-      value: minPrice,
+      name: 'priceMin',
+      value: priceMin,
     },
     {
-      name: 'maxPrice',
-      value: maxPrice,
+      name: 'priceMax',
+      value: priceMax,
     },
     {
       name: 'areaMax',

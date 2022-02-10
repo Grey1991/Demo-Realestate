@@ -61,8 +61,8 @@ export async function getServerSideProps({ query }) {
   const params = {
     purpose: query.purpose || 'for-rent',
     rentFrequency: query.rentFrequency || 'yearly',
-    minPrice: query.minPrice || '0',
-    maxPrice: query.maxPrice || '1000000',
+    priceMin: query.priceMin || '0',
+    priceMax: query.priceMax || '1000000',
     roomsMin: query.roomsMin || '0',
     bathsMin: query.bathsMin || '0',
     sort: query.sort || 'price-desc',
