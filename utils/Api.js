@@ -28,3 +28,12 @@ export const searchPropertiesLocation = async query => {
   });
   return data;
 };
+
+export const getPropertyDetails = async id => {
+  const { data } = await axiosInstance.get('properties/detail', {
+    params: {
+      externalID: id,
+    },
+  });
+  return data;
+};

@@ -25,7 +25,7 @@ const SearchFilter = () => {
   const [locationData, setLocationData] = useState();
   const router = useRouter();
 
-  const debouncedSearch = useDebouncedSearch(setSearchTerm);
+  // const debouncedSearch = useDebouncedSearch(setSearchTerm);
 
   const searchProperties = filterValues => {
     const { pathname, query } = router;
