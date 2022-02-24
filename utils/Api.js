@@ -6,7 +6,8 @@ const axiosInstance = axios.create({
   baseURL: baseUrl,
   headers: {
     'x-rapidapi-host': 'bayut.p.rapidapi.com',
-    'x-rapidapi-key': '0030879367msh58999b1dc0c8d38p171b92jsn40e939d8b667',
+
+    'x-rapidapi-key': process.env.NEXT_PUBLIC_RAPID_API_KEY,
   },
 });
 
